@@ -1,0 +1,48 @@
+***********************************************************************CLUSTERING********************************************************************************************
+Number of users collected: 1516
+
+number of communities discovered: 5 
+Subgraph: 0 consists of 296
+Subgraph: 1 consists of 25
+Subgraph: 2 consists of 2
+Subgraph: 3 consists of 1
+Subgraph: 4 consists of 1
+
+Average Number of users per community 65.000000
+
+**************************************************************SENTIMENT ANALYSIS Using AFINN****************************************************************
+Number of tweets collected to apply AFINN : 100
+Number of instances per class Afinn predicted for testing dataset:	 Negative tweets: 34 	 neutral tweets: 40 	 positive tweets: 26 
+
+--------------------------------------------EXAMPLES-----------------------------------
+These are the Examples of Negative class , Neutral class, Positive class respectively: 0    RT @snopes: Fact Check: Donald Trump Said Repu...
+1    @Brewgan @SurruscoJanet @KeithOlbermann Exactl...
+3    RT @BetteMidler: Trump tweeted he is our favor...
+Name: text, dtype: object 
+
+
+************************************************SENTIMENT ANALYSIS Using Logistic Regression Algorithm********************************************************
+Number of tweets collected to train the model: 455
+Number of tweets collected to predict class labels: 100
+Number of instances per class for training dataset:	 class -1: 157 	 class 0: 247 	 class 1: 51 
+Setting which is having highest accuracy on training dataset: {'lower': False, 'punct': False, 'url': False, 'mention': False, 'Hashtags': False, 'RT': False}
+Highest Cross Valdation Accuracy achieved by this setting : 0.771428571429 
+By applying these settings to test dataset: 
+Predicted Number of instances per class for testing dataset:	 class -1: 48 	 class 0: 48 	 class 1: 4
+--------------------------------------------EXAMPLES-----------------------------------
+These are the Examples of class -1, class 0, class 1 respectively:
+0     RT @snopes: Fact Check: Donald Trump Said Repu...
+2     RT @TheRoyalPosts: Democrats are more upset th...
+68    RT @MillenPolitics: Students are not profit ce...
+Name: text, dtype: object 
+
+
+******************************************************************************************************************************
+
+Number of tweets classified as positive by both algorithms:1
+
+Number of tweets classified as Negative by both algorithms:15
+
+Number of tweets classified as Neutral by both algorithms:21
+
+Number of tweets classified same by both algorithms: 37
